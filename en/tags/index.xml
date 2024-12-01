@@ -43,5 +43,26 @@
       <guid>https://blog.weken.site/en/tags/web-development/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Developer</title>
+      <link>https://blog.weken.site/en/tags/developer/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://blog.weken.site/en/tags/developer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Productivity</title>
+      <link>https://blog.weken.site/en/tags/productivity/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://blog.weken.site/en/tags/productivity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tips</title>
+      <link>https://blog.weken.site/en/tags/tips/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://blog.weken.site/en/tags/tips/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

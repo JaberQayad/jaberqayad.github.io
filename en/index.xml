@@ -37,18 +37,18 @@
       <description>A beginner&amp;rsquo;s guide to mobile development.</description>
     </item>
     <item>
-      <title>Introduction to Mobile Development</title>
-      <link>https://blog.weken.site/en/blog/test/</link>
-      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://blog.weken.site/en/blog/test/</guid>
-      <description>A beginner&amp;rsquo;s guide to mobile development.</description>
-    </item>
-    <item>
       <title>My Projects</title>
       <link>https://blog.weken.site/en/page/projects/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://blog.weken.site/en/page/projects/</guid>
       <description>&lt;p&gt;Here are some projects I&amp;rsquo;ve worked on:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Task Manager App:&lt;/strong&gt; A Flutter-based mobile app for managing tasks in real-time.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Portfolio Website:&lt;/strong&gt; Built with Hugo and customized themes.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;API Backend:&lt;/strong&gt; A Node.js API for a task management system.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Check them out and let me know what you think!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Productivity Tips for Developers</title>
+      <link>https://blog.weken.site/en/blog/productivity/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://blog.weken.site/en/blog/productivity/</guid>
+      <description>Productivity tips for developers to help you get more done in less time.</description>
     </item>
   </channel>
 </rss>
