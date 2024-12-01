@@ -23,6 +23,12 @@
     <loc>https://blog.weken.site/en/categories/development/</loc>
     <lastmod>2024-12-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://blog.weken.site/en/blog/getting-started-hugo/</loc>
+    <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.weken.site/en/tags/hugo/</loc>
+    <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.weken.site/en/blog/intro-to-mobile-dev/</loc>
     <lastmod>2024-12-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -35,7 +41,13 @@
     <loc>https://blog.weken.site/en/page/</loc>
     <lastmod>2024-12-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://blog.weken.site/en/tags/static-site/</loc>
+    <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.weken.site/en/tags/</loc>
+    <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.weken.site/en/tags/web-development/</loc>
     <lastmod>2024-12-01T00:00:00+00:00</lastmod>
   </url>
 </urlset>

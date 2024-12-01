@@ -9,6 +9,13 @@
     <lastBuildDate>Sun, 01 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.weken.site/en/categories/development/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Getting Started with Hugo</title>
+      <link>https://blog.weken.site/en/blog/getting-started-hugo/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://blog.weken.site/en/blog/getting-started-hugo/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Hugo is a fast static site generator built with Go. It&amp;rsquo;s perfect for building personal blogs, documentation, and even full websites. In this guide, we’ll walk through how to get started with Hugo, from installation to creating your first post.&lt;/p&gt;&#xA;&lt;h2 id=&#34;installing-hugo&#34;&gt;Installing Hugo&lt;/h2&gt;&#xA;&lt;p&gt;Before you can start building with Hugo, you&amp;rsquo;ll need to install it on your machine. Here are the steps to install Hugo on different platforms:&lt;/p&gt;&#xA;&lt;h3 id=&#34;for-macos&#34;&gt;For MacOS:&lt;/h3&gt;&#xA;&lt;p&gt;If you’re on a Mac, you can install Hugo with Homebrew:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Introduction to Mobile Development</title>
       <link>https://blog.weken.site/en/blog/intro-to-mobile-dev/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>

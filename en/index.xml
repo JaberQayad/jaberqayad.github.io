@@ -23,6 +23,13 @@
       <description>&lt;p&gt;Want to get in touch? Feel free to reach out!&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:jay@example.com&#34;&gt;jay@example.com&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Twitter:&lt;/strong&gt; &lt;a href=&#34;https://twitter.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@JayDev&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=&#34;https://github.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;github.com/JayDev&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;I&amp;rsquo;d love to hear from you!&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Getting Started with Hugo</title>
+      <link>https://blog.weken.site/en/blog/getting-started-hugo/</link>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://blog.weken.site/en/blog/getting-started-hugo/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Hugo is a fast static site generator built with Go. It&amp;rsquo;s perfect for building personal blogs, documentation, and even full websites. In this guide, we’ll walk through how to get started with Hugo, from installation to creating your first post.&lt;/p&gt;&#xA;&lt;h2 id=&#34;installing-hugo&#34;&gt;Installing Hugo&lt;/h2&gt;&#xA;&lt;p&gt;Before you can start building with Hugo, you&amp;rsquo;ll need to install it on your machine. Here are the steps to install Hugo on different platforms:&lt;/p&gt;&#xA;&lt;h3 id=&#34;for-macos&#34;&gt;For MacOS:&lt;/h3&gt;&#xA;&lt;p&gt;If you’re on a Mac, you can install Hugo with Homebrew:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Introduction to Mobile Development</title>
       <link>https://blog.weken.site/en/blog/intro-to-mobile-dev/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
