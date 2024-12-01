@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on Big Blog</title>
-    <link>https://blog.weken.site/en/blog/</link>
-    <description>Recent content in Blogs on Big Blog</description>
+    <title>Development on Big Blog</title>
+    <link>https://blog.weken.site/en/categories/development/</link>
+    <description>Recent content in Development on Big Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 01 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blog.weken.site/en/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.weken.site/en/categories/development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Mobile Development</title>
       <link>https://blog.weken.site/en/blog/intro-to-mobile-dev/</link>

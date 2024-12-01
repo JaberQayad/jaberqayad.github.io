@@ -2,27 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.weken.site/en/page/about/</loc>
-    <lastmod>2020-07-01T00:00:00-04:00</lastmod>
-  </url><url>
     <loc>https://blog.weken.site/en/</loc>
-    <lastmod>2020-07-01T00:00:00-04:00</lastmod>
-  </url><url>
-    <loc>https://blog.weken.site/en/blog/hello/</loc>
-    <lastmod>2020-07-01T00:00:00-04:00</lastmod>
-  </url><url>
-    <loc>https://blog.weken.site/en/tags/blog/</loc>
-    <lastmod>2020-07-01T00:00:00-04:00</lastmod>
+    <lastmod>2024-12-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.weken.site/en/blog/</loc>
-    <lastmod>2020-07-01T00:00:00-04:00</lastmod>
+    <lastmod>2024-12-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.weken.site/en/page/</loc>
-    <lastmod>2020-07-01T00:00:00-04:00</lastmod>
+    <loc>https://blog.weken.site/en/page/about/</loc>
+    <lastmod>2024-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.weken.site/en/tags/</loc>
-    <lastmod>2020-07-01T00:00:00-04:00</lastmod>
+    <loc>https://blog.weken.site/en/tags/beginners/</loc>
+    <lastmod>2024-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.weken.site/en/categories/</loc>
+    <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.weken.site/en/page/contact/</loc>
+    <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.weken.site/en/categories/development/</loc>
+    <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.weken.site/en/blog/intro-to-mobile-dev/</loc>
+    <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.weken.site/en/tags/mobile-development/</loc>
+    <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.weken.site/en/page/projects/</loc>
+    <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.weken.site/en/page/</loc>
+    <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.weken.site/en/tags/</loc>
+    <lastmod>2024-12-01T00:00:00+00:00</lastmod>
   </url>
 </urlset>
