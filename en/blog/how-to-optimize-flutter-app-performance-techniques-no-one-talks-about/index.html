@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="/favicon.svg">
+
+  <title>
+  How to Optimize Flutter App Performance: Techniques No One Talks About - Big Blog
+  </title>
+  <meta name="description" content="
+In the world of mobile app development, performance is king. Users expect fast, responsive apps that don’t drain their battery or consume excessive data. While Flutter is known for its ability to create beautiful, high-performance applications, there are still many ways to optimize your app that are often overlooked. In this comprehensive guide, we’ll explore lesser-known techniques to boost your Flutter app’s performance, ensuring a smooth and efficient user experience. These are the tips that go beyond the basics and dive into advanced optimizations." /><meta name="generator" content="Hugo 0.139.2"><link
+    rel="stylesheet"
+    href="https://blog.weken.site/css/styles.min.95835ff8f09b61217732a46e1aca85827e53c438f27ac56b8fe073abbd1c3fce.css"
+    integrity="sha256-lYNf+PCbYSF3MqRuGsqFgn5TxDjyesVrj+Bzq70cP84="
+  />
+  
+  
+
+  <meta property="og:url" content="https://blog.weken.site/en/blog/how-to-optimize-flutter-app-performance-techniques-no-one-talks-about/">
+  <meta property="og:site_name" content="Big Blog">
+  <meta property="og:title" content="How to Optimize Flutter App Performance: Techniques No One Talks About">
+  <meta property="og:description" content="In the world of mobile app development, performance is king. Users expect fast, responsive apps that don’t drain their battery or consume excessive data. While Flutter is known for its ability to create beautiful, high-performance applications, there are still many ways to optimize your app that are often overlooked. In this comprehensive guide, we’ll explore lesser-known techniques to boost your Flutter app’s performance, ensuring a smooth and efficient user experience. These are the tips that go beyond the basics and dive into advanced optimizations.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-08-22T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-08-22T00:00:00+00:00">
+    <meta property="article:tag" content="Dart">
+    <meta property="article:tag" content="Flutter">
+    <meta property="article:tag" content="Responsive">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="How to Optimize Flutter App Performance: Techniques No One Talks About">
+  <meta name="twitter:description" content="In the world of mobile app development, performance is king. Users expect fast, responsive apps that don’t drain their battery or consume excessive data. While Flutter is known for its ability to create beautiful, high-performance applications, there are still many ways to optimize your app that are often overlooked. In this comprehensive guide, we’ll explore lesser-known techniques to boost your Flutter app’s performance, ensuring a smooth and efficient user experience. These are the tips that go beyond the basics and dive into advanced optimizations.">
+
+  
+  <meta itemprop="name" content="How to Optimize Flutter App Performance: Techniques No One Talks About">
+  <meta itemprop="description" content="In the world of mobile app development, performance is king. Users expect fast, responsive apps that don’t drain their battery or consume excessive data. While Flutter is known for its ability to create beautiful, high-performance applications, there are still many ways to optimize your app that are often overlooked. In this comprehensive guide, we’ll explore lesser-known techniques to boost your Flutter app’s performance, ensuring a smooth and efficient user experience. These are the tips that go beyond the basics and dive into advanced optimizations.">
+  <meta itemprop="datePublished" content="2024-08-22T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-08-22T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1243">
+  <meta itemprop="keywords" content="Dart,Flutter,Responsive">
+
+  
+</head>
+<body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container flex justify-between md:justify-between gap-4 flex-wrap p-6 mx-auto relative">
+  <a href="https://blog.weken.site/en/" class="capitalize font-extrabold text-2xl">
+    
+    Big Blog
+    
+  </a>
+  <button class="mobile-menu-button md:hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <line x1="4" y1="8" x2="20" y2="8" />
+      <line x1="4" y1="16" x2="20" y2="16" />
+    </svg>
+  </button>
+  <ul class="mobile-menu absolute z-10 px-6 pb-6 md:p-0 top-full left-0 w-full md:w-auto md:relative hidden md:flex flex-col md:flex-row items-end md:items-center gap-4 lg:gap-6 bg-white dark:bg-gray-800">
+
+    
+    <li><a href="/en/blog">Blog</a></li>
+    
+    <li><a href="/en/page/about/">About</a></li>
+    
+    <li><a href="/en/page/projects/">Projects</a></li>
+    
+    <li><a href="/en/page/contact/">Contact</a></li>
+    
+    <li><a href="/en/tags">Tags</a></li>
+    
+
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="open-search inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
+      </span>
+    </li>
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="toggle-dark-mode inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="3" />
+          <line x1="12" y1="5" x2="12" y2="5.01" />
+          <line x1="17" y1="7" x2="17" y2="7.01" />
+          <line x1="19" y1="12" x2="19" y2="12.01" />
+          <line x1="17" y1="17" x2="17" y2="17.01" />
+          <line x1="12" y1="19" x2="12" y2="19.01" />
+          <line x1="7" y1="17" x2="7" y2="17.01" />
+          <line x1="5" y1="12" x2="5" y2="12.01" />
+          <line x1="7" y1="7" x2="7" y2="7.01" />
+        </svg>
+      </span>
+    </li>
+    
+  </ul>
+</header>
+<main class="flex-1">
+  
+  
+
+  
+
+  <article class="prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4">
+
+    <h1 class="text-2xl font-bold mb-2">How to Optimize Flutter App Performance: Techniques No One Talks About</h1>
+    
+    <h5 class="text-sm flex items-center flex-wrap">
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <rect x="4" y="5" width="16" height="16" rx="2" />
+        <line x1="16" y1="3" x2="16" y2="7" />
+        <line x1="8" y1="3" x2="8" y2="7" />
+        <line x1="4" y1="11" x2="20" y2="11" />
+        <rect x="8" y="15" width="2" height="2" />
+      </svg>
+      Posted on 
+  
+    August 22, 2024
+  
+
+
+      
+        &nbsp;&bull;&nbsp;
+      
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <circle cx="12" cy="12" r="9" />
+        <polyline points="12 7 12 12 15 15" />
+      </svg>
+      6&nbsp;minutes
+      &nbsp;&bull;
+      <svg xmlns="http://www.w3.org/2000/svg" class="mx-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <line x1="3" y1="6" x2="3" y2="19" />
+        <line x1="12" y1="6" x2="12" y2="19" />
+        <line x1="21" y1="6" x2="21" y2="19" />
+      </svg>
+      1243&nbsp;words
+      
+        
+      
+    </h5>
+    
+
+    <details id="TableOfContents" class="px-4 mt-4 bg-gray-100 dark:bg-gray-700 rounded toc">
+    <summary class="flex items-center font-bold py-2 px-4 cursor-pointer justify-between select-none text-black dark:text-white">
+      <span>Table of contents</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <polyline points="6 9 12 15 18 9"></polyline>
+     </svg>
+    </summary>
+
+    <ul class="mt-2 pb-4">
+        
+
+        
+        <li>
+        <a href="#why-performance-optimization-matters-in-flutter">Why Performance Optimization Matters in Flutter</a>
+        
+
+        
+        </li><li>
+        <a href="#step-1-minimize-rebuilds-with-proper-widget-structure">Step 1: Minimize Rebuilds with Proper Widget Structure</a>
+        
+
+        
+        </li><li>
+        <a href="#step-2-optimize-image-and-asset-loading">Step 2: Optimize Image and Asset Loading</a>
+        
+
+        
+        </li><li>
+        <a href="#step-3-leverage-the-power-of-listviewbuilder-and-gridviewbuilder">Step 3: Leverage the Power of <code>ListView.builder</code> and <code>GridView.builder</code></a>
+        
+
+        
+        </li><li>
+        <a href="#step-4-reduce-widget-overdraw-and-optimize-layouts">Step 4: Reduce Widget Overdraw and Optimize Layouts</a>
+        
+
+        
+        </li><li>
+        <a href="#step-5-optimize-animations-for-smooth-ui">Step 5: Optimize Animations for Smooth UI</a>
+        
+
+        
+        </li><li>
+        <a href="#step-6-manage-memory-usage-efficiently">Step 6: Manage Memory Usage Efficiently</a>
+        
+
+        
+        </li><li>
+        <a href="#step-7-optimize-network-requests-and-data-handling">Step 7: Optimize Network Requests and Data Handling</a>
+        
+
+        
+        </li><li>
+        <a href="#conclusion-the-hidden-gems-of-flutter-performance-optimization">Conclusion: The Hidden Gems of Flutter Performance Optimization</a>
+        </li></ul>
+  </details>
+
+    <p><img src="images/974f3d07-a85f-49a5-a110-247426888495.jpg"></p>
+<p>In the world of mobile app development, performance is king. Users expect fast, responsive apps that don’t drain their battery or consume excessive data. While Flutter is known for its ability to create beautiful, high-performance applications, there are still many ways to optimize your app that are often overlooked. In this comprehensive guide, we’ll explore lesser-known techniques to boost your Flutter app’s performance, ensuring a smooth and efficient user experience. These are the tips that go beyond the basics and dive into advanced optimizations.</p>
+<h3 id="why-performance-optimization-matters-in-flutter">Why Performance Optimization Matters in Flutter</h3>
+<p>Before diving into the &ldquo;how-to,&rdquo; it&rsquo;s important to understand why performance optimization is crucial in Flutter:</p>
+<ul>
+<li>
+<p><strong>User Experience</strong>: A laggy or slow app frustrates users, leading to poor reviews and high uninstall rates.</p>
+</li>
+<li>
+<p><strong>Battery Efficiency</strong>: High-performance apps use less battery, which is critical for mobile devices.</p>
+</li>
+<li>
+<p><strong>Data Usage</strong>: Optimizing your app reduces data consumption, which is essential for users on limited data plans.</p>
+</li>
+<li>
+<p><strong>App Store Ranking</strong>: Apps with better performance tend to rank higher, as both Apple and Google consider user experience in their algorithms.</p>
+</li>
+</ul>
+<p>Now, let&rsquo;s look at some advanced techniques for optimizing Flutter app performance.</p>
+<h3 id="step-1-minimize-rebuilds-with-proper-widget-structure">Step 1: Minimize Rebuilds with Proper Widget Structure</h3>
+<p>Flutter&rsquo;s reactive framework is powerful but can lead to unnecessary rebuilds if not managed correctly. Rebuilding widgets that don’t need to be rebuilt is one of the most common performance pitfalls in Flutter. Here’s how to minimize rebuilds:</p>
+<ul>
+<li><strong>Use <code>const</code> Constructors</strong>: Whenever possible, use <code>const</code> constructors for your widgets. This tells Flutter that the widget tree will not change, allowing the framework to reuse the widget instead of rebuilding it.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span>  <span style="color:#8be9fd;font-style:italic">const</span> MyWidget({Key<span style="color:#ff79c6">?</span> key}) <span style="color:#ff79c6">:</span> <span style="color:#ff79c6">super</span>(<span style="color:#8be9fd;font-style:italic">key:</span> key);
+</span></span></code></pre></div><ul>
+<li><strong>Use <code>Selector</code> with <code>Provider</code></strong>: If you’re using the Provider package, use <code>Selector</code> to rebuild only the parts of the UI that need updating, instead of the entire widget.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span>  Selector<span style="color:#ff79c6">&lt;</span>MyModel, <span style="color:#8be9fd">int</span><span style="color:#ff79c6">&gt;</span>(
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">selector:</span> (context, model) <span style="color:#ff79c6">=&gt;</span> model.counter,
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">builder:</span> (context, counter, child) {
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">return</span> Text(<span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">$</span>counter<span style="color:#f1fa8c">&#39;</span>);
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>  );
+</span></span></code></pre></div><ul>
+<li><strong>Avoid Passing Down Unnecessary Data</strong>: Be mindful of the data you pass down through the widget tree. Only pass the data that a widget needs, not the entire model.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span>  <span style="color:#6272a4">// Bad: Passing the entire model
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>  <span style="color:#8be9fd;font-style:italic">final</span> model <span style="color:#ff79c6">=</span> Provider.of<span style="color:#ff79c6">&lt;</span>MyModel<span style="color:#ff79c6">&gt;</span>(context);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4">// Good: Only passing necessary data
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>  <span style="color:#8be9fd;font-style:italic">final</span> counter <span style="color:#ff79c6">=</span> Provider.of<span style="color:#ff79c6">&lt;</span>MyModel<span style="color:#ff79c6">&gt;</span>(context).counter;
+</span></span></code></pre></div><h3 id="step-2-optimize-image-and-asset-loading">Step 2: Optimize Image and Asset Loading</h3>
+<p>Images are a significant part of any mobile app, and how you handle them can greatly impact performance. Here are some tips to optimize image and asset loading:</p>
+<ul>
+<li><strong>Use Smaller Image Sizes</strong>: Always use images that are appropriately sized for the device’s screen. Avoid loading large images only to resize them in the app, as this consumes memory and processing power.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span>  Image.asset(
+</span></span><span style="display:flex;"><span>    <span style="color:#f1fa8c">&#39;assets/images/small_image.png&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">width:</span> <span style="color:#bd93f9">100</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">height:</span> <span style="color:#bd93f9">100</span>,
+</span></span><span style="display:flex;"><span>  );
+</span></span></code></pre></div><ul>
+<li><strong>Use <code>CachedNetworkImage</code></strong>: For images loaded from the internet, use the <code>CachedNetworkImage</code> package. This not only caches images locally but also handles memory efficiently.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span>CachedNetworkImage(
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">imageUrl:</span> <span style="color:#f1fa8c">&#34;https://example.com/image.png&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">placeholder:</span> (context, url) <span style="color:#ff79c6">=&gt;</span> CircularProgressIndicator(),
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">errorWidget:</span> (context, url, error) <span style="color:#ff79c6">=&gt;</span> Icon(Icons.error),
+</span></span><span style="display:flex;"><span>  );
+</span></span></code></pre></div><ul>
+<li><strong>Defer Image Loading with <code>Image.network</code></strong>: Use the <code>Image.network</code> constructor with the <code>loadingBuilder</code> to load images progressively, reducing the initial load time.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span> Image.network(
+</span></span><span style="display:flex;"><span>    <span style="color:#f1fa8c">&#39;https://example.com/image.png&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">loadingBuilder:</span> (context, child, loadingProgress) {
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">if</span> (loadingProgress <span style="color:#ff79c6">==</span> <span style="color:#ff79c6">null</span>) <span style="color:#ff79c6">return</span> child;
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">return</span> Center(
+</span></span><span style="display:flex;"><span>        <span style="color:#8be9fd;font-style:italic">child:</span> CircularProgressIndicator(
+</span></span><span style="display:flex;"><span>          <span style="color:#8be9fd;font-style:italic">value:</span> loadingProgress.expectedTotalBytes <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">null</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#ff79c6">?</span> loadingProgress.cumulativeBytesLoaded <span style="color:#ff79c6">/</span> (loadingProgress.expectedTotalBytes <span style="color:#ff79c6">??</span> <span style="color:#bd93f9">1</span>)
+</span></span><span style="display:flex;"><span>              <span style="color:#ff79c6">:</span> <span style="color:#ff79c6">null</span>,
+</span></span><span style="display:flex;"><span>        ),
+</span></span><span style="display:flex;"><span>      );
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>  );
+</span></span></code></pre></div><h3 id="step-3-leverage-the-power-of-listviewbuilder-and-gridviewbuilder">Step 3: Leverage the Power of <code>ListView.builder</code> and <code>GridView.builder</code></h3>
+<p>Handling large lists or grids of data can be challenging, especially when they cause performance bottlenecks. The key is to use <code>ListView.builder</code> or <code>GridView.builder</code>, which are optimized to build only the visible items, rather than the entire list.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span> ListView.builder(
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">itemCount:</span> <span style="color:#bd93f9">1000</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">itemBuilder:</span> (context, index) {
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">return</span> ListTile(
+</span></span><span style="display:flex;"><span>        <span style="color:#8be9fd;font-style:italic">title:</span> Text(<span style="color:#f1fa8c">&#39;Item </span><span style="color:#f1fa8c">$</span>index<span style="color:#f1fa8c">&#39;</span>),
+</span></span><span style="display:flex;"><span>      );
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>  );
+</span></span></code></pre></div><h3 id="step-4-reduce-widget-overdraw-and-optimize-layouts">Step 4: Reduce Widget Overdraw and Optimize Layouts</h3>
+<p>Widget overdraw occurs when unnecessary widgets are drawn multiple times on the screen. Reducing overdraw can significantly improve performance:</p>
+<ul>
+<li><strong>Use <code>Opacity</code> Wisely</strong>: Instead of wrapping a widget with <code>Opacity</code>, consider using <code>FadeTransition</code> or ensuring the widget is only drawn once.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#6272a4">// Instead of this
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>  Opacity(
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">opacity:</span> <span style="color:#bd93f9">0.5</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">child:</span> MyWidget(),
+</span></span><span style="display:flex;"><span>  );
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4">// Use a FadeTransition for smoother performance
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>  FadeTransition(
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">opacity:</span> animation,
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">child:</span> MyWidget(),
+</span></span><span style="display:flex;"><span>  );
+</span></span></code></pre></div><ul>
+<li><strong>Simplify Layouts</strong>: Avoid deeply nested layouts, which can slow down your app. Use <code>Stack</code> or <code>Align</code> to position widgets more efficiently.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span> <span style="color:#6272a4">// Complex and nested
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>  Column(
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">children:</span> [
+</span></span><span style="display:flex;"><span>      Row(
+</span></span><span style="display:flex;"><span>        <span style="color:#8be9fd;font-style:italic">children:</span> [
+</span></span><span style="display:flex;"><span>          Align(
+</span></span><span style="display:flex;"><span>            <span style="color:#8be9fd;font-style:italic">alignment:</span> Alignment.centerLeft,
+</span></span><span style="display:flex;"><span>            <span style="color:#8be9fd;font-style:italic">child:</span> Text(<span style="color:#f1fa8c">&#39;Text 1&#39;</span>),
+</span></span><span style="display:flex;"><span>          ),
+</span></span><span style="display:flex;"><span>        ],
+</span></span><span style="display:flex;"><span>      ),
+</span></span><span style="display:flex;"><span>      Row(
+</span></span><span style="display:flex;"><span>        <span style="color:#8be9fd;font-style:italic">children:</span> [
+</span></span><span style="display:flex;"><span>          Align(
+</span></span><span style="display:flex;"><span>            <span style="color:#8be9fd;font-style:italic">alignment:</span> Alignment.centerRight,
+</span></span><span style="display:flex;"><span>            <span style="color:#8be9fd;font-style:italic">child:</span> Text(<span style="color:#f1fa8c">&#39;Text 2&#39;</span>),
+</span></span><span style="display:flex;"><span>          ),
+</span></span><span style="display:flex;"><span>        ],
+</span></span><span style="display:flex;"><span>      ),
+</span></span><span style="display:flex;"><span>    ],
+</span></span><span style="display:flex;"><span>  );
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4">// Simplified with Stack
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>  Stack(
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">children:</span> [
+</span></span><span style="display:flex;"><span>      Align(
+</span></span><span style="display:flex;"><span>        <span style="color:#8be9fd;font-style:italic">alignment:</span> Alignment.centerLeft,
+</span></span><span style="display:flex;"><span>        <span style="color:#8be9fd;font-style:italic">child:</span> Text(<span style="color:#f1fa8c">&#39;Text 1&#39;</span>),
+</span></span><span style="display:flex;"><span>      ),
+</span></span><span style="display:flex;"><span>      Align(
+</span></span><span style="display:flex;"><span>        <span style="color:#8be9fd;font-style:italic">alignment:</span> Alignment.centerRight,
+</span></span><span style="display:flex;"><span>        <span style="color:#8be9fd;font-style:italic">child:</span> Text(<span style="color:#f1fa8c">&#39;Text 2&#39;</span>),
+</span></span><span style="display:flex;"><span>      ),
+</span></span><span style="display:flex;"><span>    ],
+</span></span><span style="display:flex;"><span>  );
+</span></span></code></pre></div><h3 id="step-5-optimize-animations-for-smooth-ui">Step 5: Optimize Animations for Smooth UI</h3>
+<p>Animations can be a double-edged sword—beautiful, but potentially performance-draining. Here’s how to keep your animations smooth without compromising performance:</p>
+<ul>
+<li><strong>Use <code>AnimatedBuilder</code> for Efficient Animations</strong>: Instead of rebuilding the entire widget tree during an animation, use <code>AnimatedBuilder</code> to only rebuild the parts that are changing.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span>AnimatedBuilder(
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">animation:</span> animationController,
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">builder:</span> (context, child) {
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">return</span> Transform.rotate(
+</span></span><span style="display:flex;"><span>        <span style="color:#8be9fd;font-style:italic">angle:</span> animationController.value <span style="color:#ff79c6">*</span> <span style="color:#bd93f9">2.0</span> <span style="color:#ff79c6">*</span> pi,
+</span></span><span style="display:flex;"><span>        <span style="color:#8be9fd;font-style:italic">child:</span> child,
+</span></span><span style="display:flex;"><span>      );
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">child:</span> Icon(Icons.refresh),
+</span></span><span style="display:flex;"><span>  );
+</span></span></code></pre></div><ul>
+<li>
+<p><strong>Limit the Use of Heavy Animations</strong>: Use lightweight animations that are GPU-accelerated. Avoid complex animations that require frequent screen repaints.</p>
+</li>
+<li>
+<p><strong>Use <code>RepaintBoundary</code></strong>: For widgets that animate frequently, wrap them in a <code>RepaintBoundary</code> to isolate them from the rest of the widget tree, preventing unnecessary repaints.</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span>RepaintBoundary(
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">child:</span> AnimatedBuilder(
+</span></span><span style="display:flex;"><span>      <span style="color:#8be9fd;font-style:italic">animation:</span> animationController,
+</span></span><span style="display:flex;"><span>      <span style="color:#8be9fd;font-style:italic">builder:</span> (context, child) {
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">return</span> Transform.rotate(
+</span></span><span style="display:flex;"><span>          <span style="color:#8be9fd;font-style:italic">angle:</span> animationController.value <span style="color:#ff79c6">*</span> <span style="color:#bd93f9">2.0</span> <span style="color:#ff79c6">*</span> pi,
+</span></span><span style="display:flex;"><span>          <span style="color:#8be9fd;font-style:italic">child:</span> child,
+</span></span><span style="display:flex;"><span>        );
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#8be9fd;font-style:italic">child:</span> Icon(Icons.refresh),
+</span></span><span style="display:flex;"><span>    ),
+</span></span><span style="display:flex;"><span>  );
+</span></span></code></pre></div><h3 id="step-6-manage-memory-usage-efficiently">Step 6: Manage Memory Usage Efficiently</h3>
+<p>Memory leaks can lead to performance degradation over time. Flutter’s garbage collector usually handles memory management well, but here are some additional tips:</p>
+<ul>
+<li><strong>Dispose of Controllers Properly</strong>: If you’re using controllers like <code>TextEditingController</code> or <code>AnimationController</code>, always call <code>dispose()</code> when they’re no longer needed.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">MyWidget</span> <span style="color:#8be9fd;font-style:italic">extends</span> StatefulWidget {
+</span></span><span style="display:flex;"><span>    @override
+</span></span><span style="display:flex;"><span>    _MyWidgetState createState() <span style="color:#ff79c6">=&gt;</span> _MyWidgetState();
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#8be9fd;font-style:italic">class</span> <span style="color:#50fa7b">_MyWidgetState</span> <span style="color:#8be9fd;font-style:italic">extends</span> State<span style="color:#ff79c6">&lt;</span>MyWidget<span style="color:#ff79c6">&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">final</span> TextEditingController _controller <span style="color:#ff79c6">=</span> TextEditingController();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    @override
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd">void</span> dispose() {
+</span></span><span style="display:flex;"><span>      _controller.dispose();
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">super</span>.dispose();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    @override
+</span></span><span style="display:flex;"><span>    Widget build(BuildContext context) {
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">return</span> TextField(<span style="color:#8be9fd;font-style:italic">controller:</span> _controller);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><ul>
+<li>
+<p><strong>Avoid Holding on to Large Objects</strong>: Be cautious with keeping large objects like images or datasets in memory for too long. Use <code>setState</code> sparingly when dealing with large data structures.</p>
+</li>
+<li>
+<p><strong>Profile Your App</strong>: Use Flutter’s DevTools to monitor memory usage and identify leaks. This tool can help you pinpoint exactly where your app is using more memory than expected.</p>
+</li>
+</ul>
+<h3 id="step-7-optimize-network-requests-and-data-handling">Step 7: Optimize Network Requests and Data Handling</h3>
+<p>Efficiently managing network requests is crucial for performance, especially in data-intensive apps. Here are some tips:</p>
+<ul>
+<li><strong>Use <code>Dio</code> for Optimized Networking</strong>: The <code>Dio</code> package offers advanced features like request cancellation, interceptors, and transformers, which can help reduce network latency and improve data handling.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span>  <span style="color:#8be9fd;font-style:italic">final</span> dio <span style="color:#ff79c6">=</span> Dio();
+</span></span><span style="display:flex;"><span>  <span style="color:#8be9fd;font-style:italic">final</span> response <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">await</span> dio.<span style="color:#8be9fd;font-style:italic">get</span>(<span style="color:#f1fa8c">&#39;https://api.example.com/data&#39;</span>);
+</span></span></code></pre></div><ul>
+<li><strong>Implement Caching</strong>: Cache network responses using packages like <code>dio_cache_interceptor</code> or <code>flutter_cache_manager</code>. This reduces the number of network requests and speeds up data retrieval.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span>DioCacheManager cacheManager <span style="color:#ff79c6">=</span> DioCacheManager(CacheConfig());
+</span></span><span style="display:flex;"><span>  Options options <span style="color:#ff79c6">=</span> buildCacheOptions(Duration(<span style="color:#8be9fd;font-style:italic">days:</span> <span style="color:#bd93f9">7</span>));
+</span></span><span style="display:flex;"><span>  dio.interceptors.add(cacheManager.interceptor);
+</span></span></code></pre></div><ul>
+<li><strong>Use Lazy Loading</strong>: For apps that fetch large amounts of data, implement lazy loading to load only what’s needed as the user scrolls.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#6272a4">// Implement lazy loading in your ListView
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>  <span style="color:#ff79c6">if</span> (index <span style="color:#ff79c6">==</span> items.length <span style="color:#ff79c6">-</span> <span style="color:#bd93f9">1</span>) {
+</span></span><span style="display:flex;"><span>    fetchMoreData();
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><h3 id="conclusion-the-hidden-gems-of-flutter-performance-optimization">Conclusion: The Hidden Gems of Flutter Performance Optimization</h3>
+<p>By implementing these advanced performance optimization techniques, you can take your Flutter app to the next level. These strategies go beyond the basics, addressing the often-overlooked aspects of app performance that can make a significant difference in user experience.</p>
+<p>Remember, optimization is not just about making your app faster; it’s about making it more efficient, responsive, and user-friendly. Start incorporating these techniques today, and watch as your app’s performance and user satisfaction soar.</p>
+
+  </article><div class="bg-blue-100 dark:bg-gray-900">
+  <div class="container px-4 py-12 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+    <div>
+      <div class="text-2xl font-bold mb-2">Follow me</div>
+      <p class="opacity-60">I work on everything coding and tweet developer memes</p>
+    </div>
+
+    <ul class="flex justify-center gap-x-3 flex-wrap gap-y-2">
+      
+
+      
+      <li>
+        <a
+          href="https://twitter.com/YourHandle"
+          target="_blank"
+          rel="noopener"
+          aria-label="Twitter"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+            />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://github.com/YourHandle"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+            />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://linkedin.com/in/YourProfile"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <line x1="8" y1="11" x2="8" y2="16" />
+            <line x1="8" y1="8" x2="8" y2="8.01" />
+            <line x1="12" y1="16" x2="12" y2="11" />
+            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://youtube.com/c/YourChannel"
+          target="_blank"
+          rel="noopener"
+          aria-label="YouTube"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-youtube"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="12" r="9" />
+            <path d="M10 9l5 3l-5 3z" />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://instagram.com/YourProfile"
+          target="_blank"
+          rel="noopener"
+          aria-label="Instagram"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-instagram"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+            <circle cx="12" cy="12" r="9" />
+            <path d="M10 9l5 3l-5 3z" />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://tiktok.com/@YourHandle"
+          target="_blank"
+          rel="noopener"
+          aria-label="Tiktok"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-tiktok"
+              width="23"
+              height="23"
+              viewBox="0 0 448 512"
+              stroke-width="30"
+              stroke="currentColor"
+              fill="none">
+            <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/>
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+
+    </ul>
+  </div>
+</div>
+
+    </main><footer class="container p-6 mx-auto flex justify-between items-center">
+  <span class="text-sm font-light">
+    
+    Copyright © 2024 - Big Blog · All rights reserved
+    
+  </span>
+  <span onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="p-1 cursor-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M18 15l-6 -6l-6 6h12" />
+    </svg>
+  </span>
+</footer>
+
+<div class="search-ui absolute top-0 left-0 w-full h-full bg-white dark:bg-gray-800 hidden">
+  <div class="container max-w-3xl mx-auto p-12">
+    <div class="relative">
+      <div class="my-4 text-center text-2xl font-bold">Search</div>
+
+      <span class="p-2 absolute right-0 top-0 cursor-pointer close-search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </span>
+    </div>
+
+    <input type="search" class="py-2 px-3 w-full dark:text-black border dark:border-transparent"
+      placeholder="Enter search query" />
+
+    <div class="search-results text-lg font-medium my-4 hidden">Results</div>
+    <ul class="search-list my-2">
+
+    </ul>
+
+    <div class="no-results text-center my-8 hidden">
+      <div class="text-xl font-semibold mb-2">No results found</div>
+      <p class="font-light text-sm">Try adjusting your search query</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="https://blog.weken.site/js/scripts.min.js"></script>
+
+
+
+
+
+
+<script>
+  
+  const darkmode = document.querySelector('.toggle-dark-mode');
+  function toggleDarkMode() {
+    if (document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem('darkmode', 'light')
+    } else {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('darkmode', 'dark')
+    }
+  }
+  if (darkmode) {
+    darkmode.addEventListener('click', toggleDarkMode);
+  }
+
+  const darkStorage = localStorage.getItem('darkmode');
+  const isBrowserDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  if (!darkStorage && isBrowserDark) {
+    document.documentElement.classList.add('dark');
+  }
+
+  if (darkStorage && darkStorage === 'dark') {
+    toggleDarkMode();
+  }
+</script>
+
+
+<script>
+  const mobileMenuButton = document.querySelector('.mobile-menu-button')
+  const mobileMenu = document.querySelector('.mobile-menu')
+  function toggleMenu() {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+  }
+  if(mobileMenu && mobileMenuButton){
+    mobileMenuButton.addEventListener('click', toggleMenu)
+  }
+</script>
+</body>
+</html>

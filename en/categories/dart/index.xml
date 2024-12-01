@@ -1,34 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on Big Blog</title>
-    <link>https://blog.weken.site/en/blog/</link>
-    <description>Recent content in Blogs on Big Blog</description>
+    <title>Dart on Big Blog</title>
+    <link>https://blog.weken.site/en/categories/dart/</link>
+    <description>Recent content in Dart on Big Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blog.weken.site/en/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>https://blog.weken.site/en/blog/getting-started-hugo/</link>
-      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://blog.weken.site/en/blog/getting-started-hugo/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Hugo is a fast static site generator built with Go. It&amp;rsquo;s perfect for building personal blogs, documentation, and even full websites. In this guide, we’ll walk through how to get started with Hugo, from installation to creating your first post.&lt;/p&gt;&#xA;&lt;h2 id=&#34;installing-hugo&#34;&gt;Installing Hugo&lt;/h2&gt;&#xA;&lt;p&gt;Before you can start building with Hugo, you&amp;rsquo;ll need to install it on your machine. Here are the steps to install Hugo on different platforms:&lt;/p&gt;&#xA;&lt;h3 id=&#34;for-macos&#34;&gt;For MacOS:&lt;/h3&gt;&#xA;&lt;p&gt;If you’re on a Mac, you can install Hugo with Homebrew:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Introduction to Mobile Development</title>
-      <link>https://blog.weken.site/en/blog/intro-to-mobile-dev/</link>
-      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://blog.weken.site/en/blog/intro-to-mobile-dev/</guid>
-      <description>A beginner&amp;rsquo;s guide to mobile development.</description>
-    </item>
-    <item>
-      <title>Nederlands worden</title>
-      <link>https://blog.weken.site/en/blog/nl-worden/</link>
-      <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://blog.weken.site/en/blog/nl-worden/</guid>
-      <description>&lt;h1 id=&#34;inleiding&#34;&gt;Inleiding&lt;/h1&gt;&#xA;&lt;p&gt;Nederlands is een prachtige taal die door miljoenen mensen over de hele wereld wordt gesproken. Of je nu van plan bent om naar Nederland te verhuizen, een Nederlandse partner hebt, of gewoon geïnteresseerd bent in het leren van een nieuwe taal, deze gids helpt je op weg.&lt;/p&gt;&#xA;&lt;h2 id=&#34;het-nederlandse-alfabet&#34;&gt;Het Nederlandse alfabet&lt;/h2&gt;&#xA;&lt;p&gt;Het Nederlandse alfabet bestaat uit 26 letters, net als het Engelse alfabet. Hier is het Nederlandse alfabet:&lt;/p&gt;&#xA;&lt;p&gt;A B C D E F G H I J K L M N O P Q R S T U V W X Y Z&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Fri, 22 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.weken.site/en/categories/dart/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Flutter App Backend: Top Solutions and Insights</title>
       <link>https://blog.weken.site/en/blog/flutter-app-backend-top-solutions-and-insights/</link>
@@ -63,13 +42,6 @@
       <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://blog.weken.site/en/blog/creating-a-responsive-ui-in-flutter-a-step-by-step-guide/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;images/flutter-responsive-ui-1024x660.jpg&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Building responsive user interfaces (UI) is essential for providing a seamless experience across various device sizes, such as mobile phones, tablets, and desktops. In this blog post, we&amp;rsquo;ll explore how to create a responsive UI in Flutter using a custom &lt;code&gt;Responsive&lt;/code&gt; widget. This widget adapts the layout based on the screen size, ensuring your app looks great on any device.&lt;/p&gt;&#xA;&lt;h4 id=&#34;step-by-step-guide-to-creating-a-responsive-widget-in-flutter&#34;&gt;Step-by-Step Guide to Creating a Responsive Widget in Flutter&lt;/h4&gt;&#xA;&lt;p&gt;Here’s how you can create a &lt;code&gt;Responsive&lt;/code&gt; widget in Flutter to handle different layouts for mobile, tablet, and desktop devices.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Productivity Tips for Developers</title>
-      <link>https://blog.weken.site/en/blog/productivity/</link>
-      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://blog.weken.site/en/blog/productivity/</guid>
-      <description>Productivity tips for developers to help you get more done in less time.</description>
     </item>
   </channel>
 </rss>

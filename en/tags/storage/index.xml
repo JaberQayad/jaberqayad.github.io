@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Storage on Big Blog</title>
+    <link>https://blog.weken.site/en/tags/storage/</link>
+    <description>Recent content in Storage on Big Blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 13 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.weken.site/en/tags/storage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Monitor Android Device Storage Space Using Flutter</title>
+      <link>https://blog.weken.site/en/blog/how-to-monitor-android-device-storage-space-using-flutter/</link>
+      <pubDate>Tue, 13 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://blog.weken.site/en/blog/how-to-monitor-android-device-storage-space-using-flutter/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;images/Screenshot-1.png&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;As developers, it&amp;rsquo;s important to keep an eye on device storage, especially when building applications that handle large files, such as multimedia or downloaded content. Flutter offers a straightforward way to check both internal and external storage on Android devices using the &lt;code&gt;flutter_storage_info&lt;/code&gt; package.&lt;/p&gt;&#xA;&lt;p&gt;In this blog post, we&amp;rsquo;ll walk through how to use the &lt;code&gt;flutter_storage_info&lt;/code&gt; package to monitor storage space on Android devices, providing a step-by-step guide and practical examples.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

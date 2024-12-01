@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on Big Blog</title>
+    <link>https://blog.weken.site/en/categories/android/</link>
+    <description>Recent content in Android on Big Blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 22 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.weken.site/en/categories/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Optimize Flutter App Performance: Techniques No One Talks About</title>
+      <link>https://blog.weken.site/en/blog/how-to-optimize-flutter-app-performance-techniques-no-one-talks-about/</link>
+      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://blog.weken.site/en/blog/how-to-optimize-flutter-app-performance-techniques-no-one-talks-about/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;images/974f3d07-a85f-49a5-a110-247426888495.jpg&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In the world of mobile app development, performance is king. Users expect fast, responsive apps that don’t drain their battery or consume excessive data. While Flutter is known for its ability to create beautiful, high-performance applications, there are still many ways to optimize your app that are often overlooked. In this comprehensive guide, we’ll explore lesser-known techniques to boost your Flutter app’s performance, ensuring a smooth and efficient user experience. These are the tips that go beyond the basics and dive into advanced optimizations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to Monitor Android Device Storage Space Using Flutter</title>
+      <link>https://blog.weken.site/en/blog/how-to-monitor-android-device-storage-space-using-flutter/</link>
+      <pubDate>Tue, 13 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://blog.weken.site/en/blog/how-to-monitor-android-device-storage-space-using-flutter/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;images/Screenshot-1.png&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;As developers, it&amp;rsquo;s important to keep an eye on device storage, especially when building applications that handle large files, such as multimedia or downloaded content. Flutter offers a straightforward way to check both internal and external storage on Android devices using the &lt;code&gt;flutter_storage_info&lt;/code&gt; package.&lt;/p&gt;&#xA;&lt;p&gt;In this blog post, we&amp;rsquo;ll walk through how to use the &lt;code&gt;flutter_storage_info&lt;/code&gt; package to monitor storage space on Android devices, providing a step-by-step guide and practical examples.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Effective Error Handling in Flutter and Dart</title>
+      <link>https://blog.weken.site/en/blog/effective-error-handling-in-flutter-and-dart/</link>
+      <pubDate>Sat, 10 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://blog.weken.site/en/blog/effective-error-handling-in-flutter-and-dart/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;images/flutter-error-1-1024x683.jpg&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;When developing Flutter applications, robust error handling is vital for ensuring app stability and simplifying the debugging process. By setting up comprehensive error handling in the &lt;code&gt;main&lt;/code&gt; function, you can effectively catch and manage global Flutter and Dart errors before the app starts. This approach not only helps in logging and managing errors efficiently but also significantly enhances the overall stability of your application.&lt;/p&gt;&#xA;&lt;p&gt;Below is a detailed guide with a code example on how to set up global error handling in a Flutter app:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
